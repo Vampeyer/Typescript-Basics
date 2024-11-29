@@ -1,0 +1,9 @@
+{
+    "include": ["src", "src/specialTypes"],
+    "compilerOptions": {
+      "outDir": "./build",
+
+    //   "noImplicitAny": true,   // Need to test this working , there was no error on compilation ?  - maybe throw one somewhere . 
+    }, 
+
+  }

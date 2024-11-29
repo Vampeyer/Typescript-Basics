@@ -1,0 +1,32 @@
+Configuring the compiler
+By default the TypeScript compiler will print a help message when run in an empty project.
+
+The compiler can be configured using a tsconfig.json file.
+
+You can have TypeScript create tsconfig.json with the recommended settings with:
+
+npx tsc --init
+Which should give you an output similar to:
+
+Created a new tsconfig.json with:
+TS
+  target: es2016
+  module: commonjs
+  strict: true
+  esModuleInterop: true
+  skipLibCheck: true
+  forceConsistentCasingInFileNames: true
+
+You can learn more at https://aka.ms/tsconfig.json
+Here is an example of more things you could add to the tsconfig.json file:
+
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "outDir": "./build"
+  }
+}
+You can open the file in an editor to add those options. 
+This will configure the TypeScript compiler to transpile 
+TypeScript files located in the src/ directory of your project, 
+into JavaScript files in the build/ directory.

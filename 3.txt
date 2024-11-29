@@ -1,0 +1,5 @@
+Exercise:
+The TypeScript compiler can be configured which file?
+
+tsconfig
+.json
